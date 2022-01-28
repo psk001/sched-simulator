@@ -1,6 +1,6 @@
 #pragma once
-// #ifndef PROCESS_H
-// #define PROCESS_H
+#ifndef PROCESS_H
+#define PROCESS_H
 
 class Process{
     private:
@@ -18,4 +18,4 @@ class Process{
         void display_process_data();
 };
 
-//#endif
+#endif

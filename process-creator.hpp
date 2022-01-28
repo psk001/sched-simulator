@@ -1,6 +1,7 @@
 #pragma once
-// #ifndef PROCESS_H
-// #define PROCESS_H
+#ifndef PROCESSCREATOR_H
+#define PROCESSCREATOR_H
+
 #include <vector>
 #include "process.hpp"
 
@@ -13,4 +14,4 @@ class ProcessCreator{
         void display_process_list();
 };
 
-//#endif
+#endif

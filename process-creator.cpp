@@ -1,12 +1,12 @@
 #include <iostream>
 #include <cstdlib>
-#include <vector>
-
-#include "process_creator.h"
+#include "process-creator.hpp"
 
 using namespace std; 
 
-void Process_Creator :: create_process_list(){
+ProcessCreator::ProcessCreator(){}
+
+void ProcessCreator::create_process_list(){
     
     for(int i=0; i<20; i++){
         int rand_pid= rand()%10000;
@@ -15,15 +15,17 @@ void Process_Creator :: create_process_list(){
         process_list.push_back(Process(rand_pid, rand_arrival_time, rand_burst_time));
     }
 
-    cout << "Process list succesfully created\n";
+    cout << "\n------------Process list succesfully created-----------\n";
 
     return;
 }
 
 
-void Process_Creator :: display_process_list(){
+void ProcessCreator::display_process_list(){
     for(int i=0; i<process_list.size(); i++){
+        cout << "Process Number: " << i+1 << endl;
         process_list[i].display_process_data();
+        cout << endl;
     }
 
     return;

@@ -1,4 +1,7 @@
- 
+#pragma once
+// #ifndef PROCESS_H
+// #define PROCESS_H
+
 class Process{
     private:
         int process_id;
@@ -14,3 +17,5 @@ class Process{
         Process(int pid, int arrival_time, int burst_time);
         void display_process_data();
 };
+
+//#endif

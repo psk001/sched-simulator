@@ -1,6 +1,7 @@
 #include <iostream>
 #include <bits/stdc++.h>
-#include "process_creator.h"
+#include "process-creator.hpp"
+
 
 using namespace std;
 
@@ -9,9 +10,9 @@ int main(){
     string scheduling_algorithm;
 
     if(scheduling_algorithm == "round robin")        
-        cin >> time_quantum;
+        std::cin >> time_quantum;
     
-    Process_Creator fProcessCreator;
+    ProcessCreator fProcessCreator;
 
     fProcessCreator.create_process_list();
     fProcessCreator.display_process_list();

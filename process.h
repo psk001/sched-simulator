@@ -1,4 +1,4 @@
-
+ 
 class Process{
     private:
         int process_id;
@@ -11,6 +11,6 @@ class Process{
     
     public:
         Process();
-        Process(int pid, int arrival_time, int burst_time, int completion_time, int waiting_time, int response_time);
+        Process(int pid, int arrival_time, int burst_time);
         void display_process_data();
 };

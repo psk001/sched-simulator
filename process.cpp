@@ -1,18 +1,18 @@
 #include <iostream>
 #include "process.h"
-
+ 
 using namespace std;
 
 Process :: Process(){}
 
-Process :: Process(int pid, int arrival_time, int burst_time, int completion_time, int waiting_time, int response_time){
+Process :: Process(int pid, int arrival_time, int burst_time){
     process_id=pid;
     arrival_time=arrival_time;
     cpu_burst_time=burst_time;
-    completion_time=completion_time;
-    turn_around_time=turn_around_time;
-    waiting_time=waiting_time;
-    response_time=response_time;
+    completion_time=-1;
+    turn_around_time=-1;
+    waiting_time=-1;
+    response_time=-1;
 }
 
 void Process::display_process_data(){

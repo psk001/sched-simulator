@@ -4,7 +4,10 @@
 
 using namespace std;
 
-Scheduler::Scheduler(){}
+Scheduler::Scheduler(){
+    ProcessCreator newProcess;
+    newProcess.create_process_list();
+}
 
 void Scheduler::first_come_first_serve(){
     
@@ -19,4 +22,9 @@ void Scheduler::round_robin(){
 void Scheduler::shortest_time_first(){
     cout << "Shortest time first algorithm \n";
     return;
+}
+
+
+bool Scheduler::priorityFCFS(Process A, Process B){
+    return A.arrival_time > B.arrival_time;
 }

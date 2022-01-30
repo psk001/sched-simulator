@@ -11,7 +11,7 @@ Process :: Process(int pid, int arrival_time, int burst_time){
     arrival_time=arrival_time;
     cpu_burst_time=burst_time;
     completion_time=-1;
-    turn_around_time=-1;
+    turn_around_time=-1; 
     waiting_time=-1;
     response_time=-1;
 }

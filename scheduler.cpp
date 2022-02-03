@@ -26,5 +26,6 @@ void Scheduler::shortest_time_first(){
 
 
 bool Scheduler::priorityFCFS(Process A, Process B){
-    return A.arrival_time > B.arrival_time;
+    return true;
+   // return A.arrival_time > B.arrival_time;
 }

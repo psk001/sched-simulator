@@ -7,10 +7,11 @@ using namespace std;
 ProcessCreator::ProcessCreator(){}
 
 void ProcessCreator::create_process_list(){
-    
+    process_list.clear();
+
     for(int i=0; i<20; i++){
         int rand_pid= rand()%10000;
-        int rand_arrival_time=rand()%10;
+        int rand_arrival_time=rand()%100;
         int rand_burst_time=rand()%10;
         process_list.push_back(Process(rand_pid, rand_arrival_time, rand_burst_time));
     }
@@ -18,8 +19,17 @@ void ProcessCreator::create_process_list(){
     cout << "\n------------Process list succesfully created-----------\n";
 
     return;
-} 
-//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
+}  
+
+Process ProcessCreator::create_new_process(){
+    int rand_pid= rand()%10000;
+    int rand_arrival_time=rand()%10;
+    int rand_burst_time=rand()%10;
+
+    Process tempProcess(rand_pid, rand_arrival_time, rand_burst_time);
+
+    return tempProcess;
+}
 
 void ProcessCreator::display_process_list(){
     for(int i=0; i<process_list.size(); i++){

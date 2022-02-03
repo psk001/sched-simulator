@@ -7,10 +7,10 @@
 
 using namespace std;
 
-void run_simulator(string sched_algo){
-    Scheduler newComp;
+void run_simulator(string sched_algo, int simulation_time){
+    Scheduler newComp(simulation_time);
 
-    if(sched_algo=="first come first serve")
+    if(sched_algo=="f")
         newComp.first_come_first_serve();
  
     else if(sched_algo=="round robin")
@@ -42,8 +42,8 @@ int main(){
     cout << "Enter simulation duration: ";
     cin >> simulation_time;
 
-    for(int i=0; i<simulation_time; i++)
-        run_simulator(scheduling_algorithm);
+    
+    run_simulator(scheduling_algorithm, simulation_time);
 
     return 0;
 }

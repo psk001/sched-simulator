@@ -6,15 +6,12 @@
 
 class FCFSComparator{
     public:
-        bool operator() (const Process&, const Process&);
+        bool operator() (const Process, const Process);
 };
 
 class SRTFComparator{
     public:
-        bool operator() (Process , Process);
+        bool operator() (const Process , const Process);
 };
-
-        // friend class SRTFComparator;
-        // friend class RoundRobinComparator;
 
 #endif

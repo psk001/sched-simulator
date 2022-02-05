@@ -4,10 +4,10 @@
 #include "scheduler.hpp"
 
 class Simulator{
-    public:
+    public:   
         Simulator();
-        Simulator(Scheduler);
-        void process_result();
+        Simulator(int, int, int);
+       // Simulator(std::string, int, int);    
 };
 
 #endif

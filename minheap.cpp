@@ -32,14 +32,14 @@ Process MinHeap:: update_burst_time(int x){
 }
 
 void MinHeap:: heapify(){
-    if(name == "FCFS"){
+    if(name == "fcfs"){
         for(int i=min_heap.size(); i>0; i--){
             for(int idx = i-1; idx != 0 && (min_heap[get_parent_idx(idx)].get_arrival_time() > min_heap[idx].get_arrival_time() || (min_heap[get_parent_idx(idx)].get_arrival_time() == min_heap[idx].get_arrival_time() && min_heap[get_parent_idx(idx)].get_process_id() > min_heap[idx].get_process_id())); idx = get_parent_idx(idx)){
                 swap(min_heap[get_parent_idx(idx)], min_heap[idx]);
             }
         }
     }
-    else if(name == "SRTF"){
+    else if(name == "srtf"){
         for(int i=min_heap.size(); i>0; i--){
             for(int idx = i-1; idx != 0 && (min_heap[get_parent_idx(idx)].get_burst_time() > min_heap[idx].get_burst_time() || (min_heap[get_parent_idx(idx)].get_burst_time() == min_heap[idx].get_burst_time() && min_heap[get_parent_idx(idx)].get_process_id() > min_heap[idx].get_process_id())); idx = get_parent_idx(idx)){
                 swap(min_heap[get_parent_idx(idx)], min_heap[idx]);

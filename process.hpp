@@ -31,6 +31,6 @@ class Process{
         void set_response_time(int );
         void update(int, int);
 
-};
+}; 
 
 #endif

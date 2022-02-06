@@ -35,16 +35,16 @@ void ProcessCreator::write_to_file(){
     ofstream pfile;
     pfile.open("output.txt");
 
-    for(int i=0; i<process_list.size(); i++)
-        if(process_list[i].get_completion_time()==0){
-            pfile << "  " << process_list[i].get_process_id() << " \t" << process_list[i].get_arrival_time() << " \t" << process_list[i].get_burst_time();
-            pfile << " \t"  << process_list[i].get_waiting_time() << " \t" << process_list[i].get_response_time()<< " \t\t" << process_list[i].get_turn_around_time();
-            pfile << " \t" << process_list[i].get_completion_time() << "\n";    
-        }
-    }
+    // for(int i=0; i<process_list.size(); i++)
+    //     if(process_list[i].get_completion_time()==0){
+    //         pfile << "  " << process_list[i].get_process_id() << " \t" << process_list[i].get_arrival_time() << " \t" << process_list[i].get_burst_time();
+    //         pfile << " \t"  << process_list[i].get_waiting_time() << " \t" << process_list[i].get_response_time()<< " \t\t" << process_list[i].get_turn_around_time();
+    //         pfile << " \t" << process_list[i].get_completion_time() << "\n";    
+    //     }
+    // }
 
    // pfile.close();
-    return;~
+    return;
 }
 
 

@@ -73,7 +73,6 @@ void Process::update(int ctime, int rtime){
 }
 
 
-
 void Process::display_process_data(){
    
     cout <<  setw(20) << "Process id: " << process_id << endl;

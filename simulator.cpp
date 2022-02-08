@@ -4,7 +4,6 @@
 #include "scheduler.hpp"
 #include "process-creator.hpp"
 
-
 using namespace std;
 
 Simulator::Simulator(){}
@@ -15,7 +14,7 @@ Simulator::Simulator(int sched_algo, int sim_time, int time_q){
     sfile.open("status.txt");
 
     sfile << "time\t Process Id\t Status\n";
-    sfile << "----------------------------\n";
+    sfile << "---------------------------\n";
     sfile.close();
 
     ProcessCreator newProcessCreator;
